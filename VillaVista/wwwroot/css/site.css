@@ -1,0 +1,64 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.hero {
+    position: relative;
+    background: url('/images/Main.png') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.hero-text {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.hero-content a.btn {
+    font-size: 1.2rem;
+    background-color: #A5B87E;
+    color: white;
+    border-radius: 5px;
+}
+
+    .hero-content a.btn:hover {
+        background-color: #8EA364;
+    }
+
+/* Footer Background */
+footer {
+    background-color: #DCE2C8;
+    padding: 15px;
+    font-size: 14px;
+}
