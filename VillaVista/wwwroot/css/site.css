@@ -98,9 +98,13 @@ footer {
     background: #DCE2C8; /* White with slight transparency */
     border-radius: 15px;
     padding: 40px;
-    width: 95%; /* Adjust width as needed */
-    margin: 0 auto; /* Center the container */
+    width: 90%; /* Adjust width as needed */
+    margin: 50px auto; /* Center the container */
     text-align: center; /* Align text properly */
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card-wrapper {
@@ -110,6 +114,8 @@ footer {
 .card {
     transition: transform 0.3s ease-in-out;
     border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
 }
 
     .card:hover {
@@ -125,8 +131,50 @@ footer {
 }
 
 .carousel img {
-    height: 200px; /* Adjust as needed */
+    height: 320px; /* Adjust as needed */
     object-fit: cover;
     border-radius: 10px;
 }
+.card .carousel {
+    height: 350px; /* Increase carousel height */
+}
+.row > div {
+    display: flex;
+}
 
+/*Services Page*/
+.services-container {
+    background: #DCE2C8; /* White with slight transparency */
+    border-radius: 15px;
+    padding: 40px;
+    width: 90%; /* Adjust width as needed */
+    margin: 50px auto; /* Center the container */
+    text-align: center; /* Align text properly */
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-wrapper {
+    padding: 15px;
+}
+
+.card {
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+}
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+.card-title {
+    font-weight: bold;
+}
+
+.text-muted {
+    font-size: 14px;
+};

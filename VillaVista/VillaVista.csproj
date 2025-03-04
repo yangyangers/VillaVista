@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\images\Facilities\NewFolder\" />
+    <Folder Include="wwwroot\images\Facilities\sports\" />
     <Folder Include="wwwroot\images\Facilities\sp\" />
   </ItemGroup>
 
