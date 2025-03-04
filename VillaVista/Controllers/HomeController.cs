@@ -18,16 +18,6 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Announcement()
-    {
-        return View();
-    }
-
-    public IActionResult Community()
-    {
-        return View();
-    }
-
     public IActionResult Contact()
     {
         return View();
