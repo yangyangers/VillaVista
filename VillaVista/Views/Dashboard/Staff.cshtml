@@ -1,0 +1,119 @@
+﻿@{
+    ViewData["Title"] = "Staff Dashboard";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar -->
+        <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+            <div class="position-sticky">
+                <h4 class="text-center mt-3">Staff Portal</h4>
+                <ul class="nav flex-column p-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            <i class="bi bi-speedometer2"></i> Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-list-check"></i> Service Requests
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-tools"></i> Maintenance Tasks
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-people"></i> Residents
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-calendar-check"></i> Schedule
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <h2>Staff Dashboard</h2>
+                <div class="d-flex align-items-center">
+                    <span class="me-3"><i class="bi bi-calendar"></i> @DateTime.Now.ToString("MM/dd/yyyy")</span>
+                    <button class="btn btn-dark"><i class="bi bi-file-earmark-bar-graph"></i> Generate Report</button>
+                </div>
+            </div>
+
+            <!-- Dashboard Cards -->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card shadow-sm p-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h5>Open Requests</h5>
+                                <h2>28</h2>
+                                <span class="text-success">+5 ↑ from yesterday</span>
+                            </div>
+                            <i class="bi bi-file-earmark-text text-primary" style="font-size: 2rem;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow-sm p-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h5>Assigned Tasks</h5>
+                                <h2>16</h2>
+                                <span class="text-danger">-3 ↓ from yesterday</span>
+                            </div>
+                            <i class="bi bi-wrench-adjustable text-warning" style="font-size: 2rem;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow-sm p-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h5>Today's Schedule</h5>
+                                <h2>7</h2>
+                                <span class="text-success">+2 ↑ from yesterday</span>
+                            </div>
+                            <i class="bi bi-calendar-check text-success" style="font-size: 2rem;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow-sm p-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h5>Resident Inquiries</h5>
+                                <h2>12</h2>
+                                <span class="text-success">+4 ↑ from yesterday</span>
+                            </div>
+                            <i class="bi bi-people text-info" style="font-size: 2rem;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pending Service Requests -->
+            <div class="mt-4">
+                <h4>Pending Service Requests</h4>
+                <div class="card p-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="text-danger"><i class="bi bi-exclamation-triangle"></i> Broken Sprinkler System</h6>
+                            <p class="text-muted small">John Smith • 123 Oak Lane • 2 hours ago</p>
+                        </div>
+                        <span class="badge bg-danger">High</span>
+                        <button class="btn btn-primary">Assign</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>

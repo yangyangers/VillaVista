@@ -177,4 +177,34 @@ footer {
 
 .text-muted {
     font-size: 14px;
-};
+}
+
+.modal-content {
+    border-radius: 12px;
+}
+
+.input-group-text {
+    border-right: 0;
+}
+
+.form-control {
+    border-left: 0;
+}
+
+.btn-dark {
+    background-color: #212529;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+    .btn-dark:hover {
+        background-color: #181c20;
+    }
+
+.text-primary {
+    color: #007bff !important;
+}
+
+    .text-primary:hover {
+        text-decoration: underline;
+    }
